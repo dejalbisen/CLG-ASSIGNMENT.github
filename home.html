@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage Assignment</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/android-chrome-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(97, 100, 92);
+            /* background-color: crimson; */
+        }
+
+        /* hjeader */
+        .class1 {
+            text-align: center;
+            display: flex;
+        }
+
+        .class1 a {
+            cursor: pointer;
+            color: white;
+            padding: 5px;
+            margin: 20px 10px;
+            font-size: 1.2rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            text-decoration: none;
+        }
+
+        .class1 a:hover {
+            color: rgb(240, 32, 146);
+            opacity: 0.9;
+            transition: all 0.5s ease-out;
+            padding: 5px;
+            margin: 20px 10px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        #id1 button {
+            cursor: pointer;
+            padding: 5px 13px;
+            margin: 3px;
+            font-family: 'Baloo Bhai 2', cursive;
+            /* background-color: rgb(162, 235, 168); */
+            background-color: crimson;
+        }
+
+        #id1 button:hover {
+            box-shadow: inset 0px 0px 2px 2px white;
+            padding: 5px 13px;
+            margin: 3px;
+            color: white;
+            background-color: crimson;
+            transition: all 0.5s ease-out;
+        }
+
+        nav {
+            background: black;
+            opacity: 0.7;
+            position: sticky;
+            top: 0px;
+        }
+
+        .navigation {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .note {
+            font-size: 15px;
+            color: rgb(235, 238, 41);
+        }
+
+        .logo {
+            border-radius: 100%;
+            width: 8%;
+            height: 1%;
+            margin: 6px;
+            margin-left: 25px;
+            cursor: pointer;
+        }
+
+        .logo:hover {
+            opacity: 0.5;
+            transition: all 0.5s ease-out;
+        }
+
+        .nav {
+            list-style: none;
+            padding: 8px;
+            margin: 10px;
+        }
+
+        .in {
+            height: 100%;
+            width: 100%;
+            background: rgb(243, 227, 227);
+            display: grid;
+            grid-template-columns: 23% 77%;
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .two {
+            background: rgb(155, 126, 126);
+
+        }
+
+        .two p {
+            padding: 15px 50px;
+        }
+
+        .topics {
+            color: rgb(67, 17, 160);
+            margin-top: 35px;
+            padding: 5px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            font-size: 1.18rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            list-style: none;
+        }
+
+        .topics ul {
+            list-style: none;
+        }
+
+        .topics ul li {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #qlinks1 {
+            display: none;
+            margin-left: 30%;
+        }
+
+        #qlinks2 {
+            display: none;
+            margin-left: 30%;
+        }
+
+        #qlinks3 {
+            display: none;
+            margin-left: 30%;
+        }
+
+        #qlinks4 {
+            display: none;
+            margin-left: 30%;
+        }
+
+        #qlinks5 {
+            display: none;
+            margin-left: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+
+        <div class="class1" id="id1">
+            <img src="code.png" alt="" class="logo">
+            <ul class="navigation navmedia">
+                <li id="a1" class="nav none"><a id="q" href="https://www.javatpoint.com/history-of-c-language">Home</a>
+                </li>
+
+                <li id="a2" class="nav none"><a id="a"
+                        href="https://dejal06.blogspot.com/2020/08/women-empowerment-in-india.html">Blog</a></li>
+                <li id="a3" class="nav none"><a id="c" href="/contact.html">Java</a></li>
+                <li id="a4" class="nav none"><a id="b" href="/login.html">Python</a></li>
+                <li id="a3" class="nav none"><a id="c" href="/contact.html">HTML</a></li>
+
+                <input type="search" class="nav search-nav none" id="isear" placeholder="Search">
+                <button class="nav none" id="sear">Search</button>
+            </ul>
+        </div>
+    </nav>
+    <div class="in">
+        <div class="one">
+            <h2 style="font-size:38px;margin: 15px; color: rgb(219, 8, 8);">Programming</h2>
+            <ul>
+                <li id="tpc1" class="topics">@C Tutorials
+                    <ul id="qlinks1">
+                        <li id="inner11" class="inner"><a href="https://www.javatpoint.com/history-of-c-language "
+                                target="_blank">~ History of C</a></li>
+                        <li id="inner12" class="inner"><a href="https://www.atnyla.com/tutorial/tokens-in-c/1/162"
+                                target="_blank">~ Tokens in C</a></li>
+                        <li id="inner13" class="inner"><a
+                                href="https://www.programiz.com/c-programming/c-keywords-identifier" target="_blank">~
+                                Keywords in C</a></li>
+                        <li id="inner14" class="inner"><a href="https://www.programiz.com/c-programming/c-operators"
+                                target="_blank">~ Operator in C</a></li>
+                        <li id="inner15" class="inner"><a href="https://www.tutorialspoint.com/cprogramming/c_loops.htm"
+                                target="_blank">~ Loops in C</a></li>
+                    </ul>
+                </li>
+                <li id="tpc2" class="topics">@C++ Tutorials
+                    <ul id="qlinks2">
+                        <li id="inner21" class="inner"><a href="https://www.w3schools.in/cplusplus-tutorial/history/"
+                                target="_blank">~ History in C++</a></li>
+                        <li id="inner22" class="inner"><a href="https://www.w3schools.in/cplusplus-tutorial/tokens/"
+                                target="_blank">~ Tokens in C++</a></li>
+                        <li id="inner23" class="inner"><a href="https://www.w3schools.in/cplusplus-tutorial/keywords/"
+                                target="_blank">~ Keywords in C++</a></li>
+                        <li id="inner24" class="inner"><a href="https://www.w3schools.com/cpp/cpp_operators.asp"
+                                target="_blank">~ Operator in C++</a></li>
+                        <li id="inner25" class="inner"><a href="https://www.w3schools.com/cpp/cpp_for_loop.asp"
+                                target="_blank">~ Loops in C++</a></li>
+                    </ul>
+                </li>
+                <li id="tpc3" class="topics">@Java Tutorials
+                    <ul id="qlinks3">
+                        <li id="inner31" class="inner"><a
+                                href="https://www.w3schools.in/java-tutorial/history-java-technology/" target="_blank">~
+                                History in Java</a></li>
+                        <li id="inner32" class="inner"><a href="https://www.w3schools.in/java-tutorial/tokens/"
+                                target="_blank">~ Tokens of Java</a></li>
+                        <li id="inner33" class="inner"><a href="https://www.w3schools.com/java/java_ref_keywords.asp"
+                                target="_blank">~ Keywords in Java</a></li>
+                        <li id="inner34" class="inner"><a href="https://www.w3schools.in/java-tutorial/loops/"
+                                target="_blank">~ Operator in Java</a></li>
+                        <li id="inner35" class="inner"><a href="https://www.w3schools.com/java/java_for_loop.asp"
+                                target="_blank">~ Loops in Java</a></li>
+                    </ul>
+                </li>
+                <li id="tpc4" class="topics">@Python Tutorials
+                    <ul id="qlinks4">
+                        <li id="inner41" class="inner"><a href="https://www.w3schools.com/python/python_intro.asp"
+                                target="_blank">~ History of Python</a></li>
+                        <li id="inner42" class="inner"> <a href="https://www.c-sharpcorner.com/article/python-tokens/">~
+                                Tokens in Python=</a></li>
+                        <li id="inner43" class="inner">~ Keywords in Python</li>
+                        <li id="inner44" class="inner">~ Operators in Python</li>
+                        <li id="inner45" class="inner">~ Loops in Python</li>
+                    </ul>
+                </li>
+                <li id="tpc5" class="topics">@HTML Tutorials
+                    <ul id="qlinks5">
+                        <li id="inner51" class="inner">~ Introduction of HTML</li>
+                        <li id="inner52" class="inner">~ HTML Basic</li>
+                        <li id="inner53" class="inner">~ HTML Elements</li>
+                        <li id="inner54" class="inner">~ HTML Style</li>
+                        <li id="inner55" class="inner">~ HTML Headings</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="two">
+            <h2 id="heading" style="font-size:38px;margin: 15px; color: rgb(49, 10, 190);">History of C</h2>
+            <p>C <span class="note">programming language</span> was developed in 1972 by Dennis Ritchie at bell
+                laboratories of AT&T (American Telephone & Telegraph), located in the U.S.A.Dennis Ritchie is known as
+                the founder of the c language.
+
+                It was developed to overcome the problems of previous languages such as B, BCPL, etc.
+
+                Initially, C language was developed to be used in UNIX operating system. It inherits many features of
+                previous languages such as B and BCPL.
+
+                Let's see the programming languages that were developed before C language.C is the widely used language.
+                It provides many features that are given below.
+
+                <br>
+
+                History of C language is interesting to know. Here we are going to discuss a brief history of the c
+                language.
+
+                C programming language was developed in 1972 by Dennis Ritchie at bell laboratories of AT&T (American
+                Telephone & Telegraph), located in the U.S.A.
+
+                Dennis Ritchie is known as the founder of the c language.
+
+                It was developed to overcome the problems of previous languages such as B, BCPL, etc.
+
+                Initially, C language was developed to be used in UNIX operating system. It inherits many features of
+                previous languages such as B and BCPL.
+
+                Let's see the programming languages that were developed before C language.
+
+
+
+
+
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        x = document.querySelector('#tpc1')
+        x1 = document.querySelector('#tpc2')
+        x2 = document.querySelector('#tpc3')
+        x3 = document.querySelector('#tpc4')
+        x4 = document.querySelector('#tpc5')
+        x.addEventListener('click', () => {
+            if (document.querySelector('#qlinks1').style.display == 'block') {
+                document.querySelector('#qlinks1').style.display = 'none';
+            }
+            else {
+                document.querySelector('#qlinks1').style.display = 'block';
+            }
+        })
+        x1.addEventListener('click', () => {
+            if (document.querySelector('#qlinks2').style.display == 'block') {
+                document.querySelector('#qlinks2').style.display = 'none';
+            }
+            else {
+                document.querySelector('#qlinks2').style.display = 'block';
+            }
+        })
+        x2.addEventListener('click', () => {
+            if (document.querySelector('#qlinks3').style.display == 'block') {
+                document.querySelector('#qlinks3').style.display = 'none';
+            }
+            else {
+                document.querySelector('#qlinks3').style.display = 'block';
+            }
+        })
+        x3.addEventListener('click', () => {
+            if (document.querySelector('#qlinks4').style.display == 'block') {
+                document.querySelector('#qlinks4').style.display = 'none';
+            }
+            else {
+                document.querySelector('#qlinks4').style.display = 'block';
+            }
+        })
+        x4.addEventListener('click', () => {
+            if (document.querySelector('#qlinks5').style.display == 'block') {
+                document.querySelector('#qlinks5').style.display = 'none';
+            }
+            else {
+                document.querySelector('#qlinks5').style.display = 'block';
+            }
+        })
+
+        onclk11 = document.querySelector('#inner11')
+        onclk12 = document.querySelector('#inner12')
+        onclk13 = document.querySelector('#inner13')
+        onclk14 = document.querySelector('#inner14')
+        onclk15 = document.querySelector('#inner15')
+        onclk21 = document.querySelector('#inner21')
+        onclk22 = document.querySelector('#inner22')
+        onclk23 = document.querySelector('#inner23')
+        onclk24 = document.querySelector('#inner24')
+        onclk25 = document.querySelector('#inner25')
+        onclk31 = document.querySelector('#inner31')
+        onclk32 = document.querySelector('#inner32')
+        onclk33 = document.querySelector('#inner33')
+        onclk34 = document.querySelector('#inner34')
+        onclk35 = document.querySelector('#inner35')
+        onclk41 = document.querySelector('#inner41')
+        onclk42 = document.querySelector('#inner42')
+        onclk43 = document.querySelector('#inner43')
+        onclk44 = document.querySelector('#inner44')
+        onclk45 = document.querySelector('#inner45')
+        onclk51 = document.querySelector('#inner51')
+        onclk52 = document.querySelector('#inner52')
+        onclk53 = document.querySelector('#inner53')
+        onclk54 = document.querySelector('#inner54')
+        onclk55 = document.querySelector('#inner55')
+
+        onclk11.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk11.innerHTML;
+        })
+        onclk12.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk12.innerHTML;
+        })
+        onclk13.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk13.innerHTML;
+        })
+        onclk14.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk14.innerHTML;
+        })
+        onclk15.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk15.innerHTML;
+        })
+        onclk21.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk21.innerHTML;
+        })
+        onclk22.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk22.innerHTML;
+        })
+        onclk23.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk23.innerHTML;
+        })
+        onclk24.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk24.innerHTML;
+        })
+        onclk25.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk25.innerHTML;
+        })
+        onclk31.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk31.innerHTML;
+        })
+        onclk32.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk32.innerHTML;
+        })
+        onclk33.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk33.innerHTML;
+        })
+        onclk34.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk34.innerHTML;
+        })
+        onclk35.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk35.innerHTML;
+        })
+        onclk41.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk41.innerHTML;
+        })
+        onclk42.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk42.innerHTML;
+        })
+        onclk43.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk43.innerHTML;
+        })
+        onclk44.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk44.innerHTML;
+        })
+        onclk45.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk45.innerHTML;
+        })
+        onclk51.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk51.innerHTML;
+        })
+        onclk52.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk52.innerHTML;
+        })
+        onclk53.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk53.innerHTML;
+        })
+        onclk54.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk54.innerHTML;
+        })
+        onclk55.addEventListener('click', () => {
+            document.querySelector('#heading').innerHTML = onclk55.innerHTML;
+        })
+    </script>
+</body>
+
+</html>

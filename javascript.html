@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript </title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/android-chrome-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: rgb(117, 121, 112);
+        /* background-color: crimson; */
+    }
+
+    .dejal1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dejal1 a {
+        cursor: pointer;
+        color: white;
+        padding: 5px;
+        margin: 20px 10px;
+        font-size: 1.2rem;
+        font-family: 'Baloo Bhai 2', cursive;
+        text-decoration: none;
+    }
+
+    .dejal1 a:hover {
+        color: crimson;
+        opacity: 0.9;
+        transition: all 0.5s ease-out;
+        padding: 5px;
+        margin: 20px 10px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .menu-btn:hover {
+        background-color: crimson;
+        color: black;
+    }
+
+    #db1 button {
+        cursor: pointer;
+        padding: 5px 13px;
+        margin: 3px;
+        font-family: 'Baloo Bhai 2', cursive;
+        background-color: rgb(211, 195, 199);
+
+    }
+
+    #db1 button:hover {
+        box-shadow: inset 0px 0px 2px 2px rgb(192, 202, 216);
+        padding: 5px 13px;
+        margin: 3px;
+        color: white;
+        background-color: rgb(243, 201, 13);
+        transition: all 0.5s ease-out;
+    }
+
+    nav {
+        background: black;
+        opacity: 0.7;
+        position: sticky;
+        top: 0px;
+    }
+
+    .navigation {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .logo {
+        border-radius: 100%;
+        width: 8%;
+        height: 1%;
+        margin: 6px;
+        margin-left: 25px;
+        cursor: pointer;
+    }
+
+    .logo:hover {
+        opacity: 0.5;
+        transition: all 0.5s ease-out;
+    }
+
+    .nav {
+        list-style-type: none;
+        padding: 8px;
+        margin: 10px;
+    }
+
+    .in {
+        height: 100%;
+        width: 100%;
+        background: rgb(172, 172, 180);
+        display: grid;
+        /* grid-template-columns: 23% 77%; */
+        text-align: center;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .two {
+        background: rgb(206, 9, 9);
+
+    }
+
+    .two p {
+        padding: 15px 50px;
+    }
+
+    b {
+        color: rgb(218, 20, 20);
+        cursor: pointer;
+    }
+
+    table,
+    th,
+    td {
+
+        border: 1px solid black;
+    }
+
+    footer {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    footer a {
+        text-decoration: none;
+        padding: 20px;
+        text-align: center;
+        float: left;
+        color: white;
+    }
+
+    footer a:hover {
+        color: crimson;
+    }
+</style>
+
+<body>
+    <nav>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+
+
+
+        <div class="dejal1" id="db1">
+            <img src="javascript.png" alt="" class="logo">
+            <ul class="navigation navmedia">
+                <li id="d1" class="nav none"><a id="a" href="#">Home</a></li>
+
+                <li id="d2" class="nav none"><a id="b" href="#">About</a></li>
+                <li id="d3" class="nav none"><a id="c"
+                        href="https://dejaldhannalalbisen.blogspot.com/2021/06/q.html">Blog</a></li>
+                <li id="d4" class="nav none"><a id="d" href="login form.html" target="__blank">Contact</a></li>
+
+
+                <input type="search" class="nav search-nav none" id="isear" placeholder="Search">
+                <button class="nav none" id="sear">Search</button>
+            </ul>
+        </div>
+    </nav>
+    <div class="in">
+        <div class="one">
+            <h2 style="font-size:38px;margin: 15px; color: rgb(221, 12, 12);">JavaScript</h2>
+
+            <li id="tpc1" class="topics">JAVASCRIPT
+                <ul id="qlinks1">
+                    <img src="founder js.jpg" alt="" width="15%"><br>
+                    <li id="inner11" class="inner"><a href="" target="_blank"><b>~ History of JavaScript ~</b></a>
+
+                        <p> JavaScript is a lightweight, interpreted programming language. It is designed for creating
+                            network-centric applications. It is complimentary to and integrated with Java. JavaScript is
+                            very easy to implement because it is integrated with HTML. It is open and cross-platform.
+                            <br> Javascript is a MUST for students and working professionals to become a great Software
+                            Engineer specially when they are working in Web Development Domain. I will list down some of
+                            the key advantages of learning Javascript: <br> 1- Javascript is the most popular
+                            programming language in the world and that makes it a programmer’s great choice. Once you
+                            learnt Javascript, it helps you developing great front-end as well as back-end softwares
+                            using different Javascript based frameworks like jQuery, Node.JS etc. <br>
+                            2- Javascript is everywhere, it comes installed on every modern web browser and so to learn
+                            Javascript you really do not need any special environment setup. For example Chrome, Mozilla
+                            Firefox , Safari and every browser you know as of today, supports Javascript. <br> 3-
+                            Javascript helps you create really beautiful and crazy fast websites. You can develop your
+                            website with a console like look and feel and give your users the best Graphical User
+                            Experience. <br> 4- JavaScript usage has now extended to mobile app development, desktop app
+                            development, and game development. This opens many opportunities for you as Javascript
+                            Programmer. </p>
+
+
+
+
+                </ul>
+                <footer>
+                    <a href="contact.html" target="_blank">Contact Us</a>
+                    <a href="#">Terms of use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">&copy;2021 DejalBisen</a>
+                </footer>
+</body>
+
+</html>
